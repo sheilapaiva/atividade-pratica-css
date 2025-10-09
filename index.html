@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing — Atividade Prática CSS</title>
+    <meta name="description" content="Landing page simples para praticar CSS moderno (Flexbox, tipografia fluida e temas).">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#"><span aria-hidden="true">🌿</span> VerdeVivo</a>
+        <nav class="site-nav" aria-label="Principal">
+          <ul class="nav-list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Soluções sustentáveis para um futuro melhor</h1>
+            <p class="hero-subtitle">Consultoria prática em eficiência energética e projetos verdes para empresas de todos os portes.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contato">Comece agora</a>
+              <a class="btn btn-outline" href="#sobre">Saiba mais</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="mock-card">
+              <div class="mock-chart"></div>
+              <div class="mock-lines"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title">Nossos serviços</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3 class="card__title">Diagnóstico Rápido</h3>
+              <p class="card__text">Levantamento inicial de desperdícios e oportunidades de economia.</p>
+              <a class="card__link" href="#contato">Solicitar</a>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Plano de Ação</h3>
+              <p class="card__text">Roadmap com metas, indicadores e custos estimados.</p>
+              <a class="card__link" href="#contato">Solicitar</a>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Implementação</h3>
+              <p class="card__text">Acompanhamento técnico e integração com sua operação.</p>
+              <a class="card__link" href="#contato">Solicitar</a>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Treinamentos</h3>
+              <p class="card__text">Capacitação do time e cultura de melhoria contínua.</p>
+              <a class="card__link" href="#contato">Solicitar</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">Sobre nós</h2>
+          <p>Somos um time multidisciplinar com foco em resultados concretos. Ajudamos empresas a reduzir custos e emissões.</p>
+        </div>
+      </section>
+
+      <section id="contato" class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title">Pronto para começar?</h2>
+          <p>Fale com nossa equipe e receba um diagnóstico gratuito.</p>
+          <a class="btn btn-primary" href="#">Falar com especialista</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> VerdeVivo. Todos os direitos reservados.</p>
+        <nav aria-label="Rodapé">
+          <ul class="nav-list">
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

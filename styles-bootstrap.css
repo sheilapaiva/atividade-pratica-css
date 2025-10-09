@@ -1,0 +1,2 @@
+/* Ajustes mínimos para a versão Bootstrap */
+.backdrop-blur{ backdrop-filter: saturate(1.2) blur(8px); }
